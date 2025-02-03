@@ -1,9 +1,7 @@
-import './App.css'
-
 function App() {
   return (
     <>
-      <p>music ai with react for eterna</p>
+      <p className="text-3xl font-bold underline text-pink-400">music ai with react for eterna</p>
     </>
   )
 }
