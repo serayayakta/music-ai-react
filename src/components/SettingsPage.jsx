@@ -7,7 +7,10 @@ const SettingsPage = () => {
     <div className="flex flex-col gap-4 mt-[17px] text-white text-[13px] mx-6">
       <p className="text-center">Ayarlar</p>
 
-      <div className="flex items-center  p-4 bg-[#262626] rounded-lg">
+      <div
+        className="flex items-center  p-4 bg-[#262626] rounded-lg"
+        onClick={() => navigate("/profile")}
+      >
         <img src="avatar.svg" alt="Avatar" className="w-10 h-10 rounded-full" />
         <p className="ml-[10px]">Lorem Ipsum</p>
         <img src="arrow.svg" alt="Arrow" className="ml-auto" />

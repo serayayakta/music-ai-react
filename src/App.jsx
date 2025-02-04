@@ -8,6 +8,7 @@ import HomePage from "./components/HomePage.jsx";
 import ChartPage from "./components/ChartPage.jsx";
 import SettingsPage from "./components/SettingsPage.jsx";
 import SubscriptionPage from "./components/SubscriptionPage.jsx";
+import ProfilePage from "./components/ProfilePage.jsx";
 
 import { useLocation } from "react-router-dom";
 
@@ -49,6 +50,7 @@ function App() {
           <Route path="/chart" element={<ChartPage />} />
           <Route path="/settings" element={<SettingsPage />} />
           <Route path="/subscriptions" element={<SubscriptionPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
         </Routes>
 
         <NavigationWrapper />
