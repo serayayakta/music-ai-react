@@ -6,7 +6,7 @@ const SubscriptionPage = () => {
   const [selectedPlan, setSelectedPlan] = useState("yearly"); // Default selected plan
 
   return (
-    <div className="flex flex-col items-center text-white text-[13px] min-h-screen bg-gradient-to-b from-[#9A88FF] to-[#1A1A1A] w-full max-w-md mx-auto">
+    <div className="flex flex-col items-center text-white text-[13px] min-h-screen bg-gradient-to-b from-[#A099FF] to-[#161616] w-full max-w-md mx-auto">
       {/* Top Navigation */}
       <div className="flex w-full px-4 py-3 items-center max-w-[375px]">
         <button onClick={() => navigate(-1)}>
@@ -82,13 +82,13 @@ const SubscriptionPage = () => {
       </div>
 
       {/* Upgrade Button */}
-      <button className="flex items-center justify-center gap-2 w-[90%] max-w-[340px] mt-6 bg-[#9A88FF] text-black py-3 rounded-lg">
+      <button className="flex items-center justify-center gap-2 w-[90%] max-w-[340px] mt-auto bg-[#9A88FF] text-black py-3 rounded-lg">
         <img src="fi_66834.svg" alt="Gift Icon" />
         <span>Hemen Yükselt</span>
       </button>
 
       {/* Footer */}
-      <div className="text-center text-[#b0b0b0] text-xs font-normal leading-none w-[90%] max-w-[340px] mt-3">
+      <div className="text-center text-[#b0b0b0] text-xs font-normal leading-none w-[90%] max-w-[340px] my-3">
         3 gün ücretsiz dene, sonra ₺19.99 / yıllık. İstediğin zaman iptal et.
       </div>
     </div>

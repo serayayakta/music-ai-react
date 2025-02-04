@@ -1,7 +1,10 @@
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import ToggleSwitch from "../components/ToggleSwitch";
 
 const SettingsPage = () => {
   const navigate = useNavigate();
+  const [notificationsEnabled, setNotificationsEnabled] = useState(false);
 
   return (
     <div className="flex flex-col gap-4 mt-[17px] text-white text-[13px] mx-6">
@@ -35,7 +38,12 @@ const SettingsPage = () => {
       <div className="flex flex-col items-center gap-4 p-4 bg-[#262626] rounded-lg">
         <div className="w-full flex items-center">
           <p>Bildirimler</p>
-          <p className="ml-auto">Toggle</p>
+          <div className="ml-auto">
+            <ToggleSwitch
+              isOn={notificationsEnabled}
+              onToggle={() => setNotificationsEnabled(!notificationsEnabled)}
+            />
+          </div>
         </div>
 
         <div className="w-full flex items-center">
