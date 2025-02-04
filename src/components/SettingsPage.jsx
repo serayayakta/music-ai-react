@@ -1,6 +1,10 @@
+import { useNavigate } from "react-router-dom";
+
 const SettingsPage = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="flex flex-col gap-4 mt-[17px] text-white text-[13px]">
+    <div className="flex flex-col gap-4 mt-[17px] text-white text-[13px] mx-6">
       <p className="text-center">Ayarlar</p>
 
       <div className="flex items-center  p-4 bg-[#262626] rounded-lg">
@@ -10,8 +14,12 @@ const SettingsPage = () => {
       </div>
 
       <div className="flex flex-col items-center gap-4  p-4 bg-[#262626] rounded-lg">
-        <div className="w-full flex items-center">
+        <div
+          className="w-full flex items-center"
+          onClick={() => navigate("/subscriptions")}
+        >
           <p>Abonelikler</p>
+
           <img src="arrow.svg" alt="Arrow" className="ml-auto" />
         </div>
 
@@ -51,10 +59,11 @@ const SettingsPage = () => {
         </div>
       </div>
 
-      <div className="flex items-center  p-4 bg-[#262626] rounded-lg">
+      <div className="flex items-center text-[#FF9999] p-4 bg-[#262626] rounded-lg">
         <div className="w-full flex items-center">
           <p>Çıkış Yap</p>
-          <img src="arrow.svg" alt="Arrow" className="ml-auto" />
+          {/* todo: change the icon color */}
+          <img src="arrow.svg" alt="Arrow" className="ml-auto text-[#FD6C6C]" />
         </div>
       </div>
     </div>
