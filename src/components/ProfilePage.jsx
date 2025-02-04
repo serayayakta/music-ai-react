@@ -6,28 +6,28 @@ const ProfilePage = () => {
   return (
     <div className="flex flex-col items-center text-white text-[13px] min-h-screen bg-gradient-to-b from-[#1A1A1A] to-[#1A1A1A] w-full max-w-md mx-auto">
       {/* Top Navigation */}
-      <div className="flex w-full px-4 py-3 items-center max-w-[375px]">
+      <div className="flex w-full px-4 py-3 items-center max-w-[375px] pt-9">
         <button
           onClick={() => navigate(-1)}
-          className="bg-[#262626] rounded-lg"
+          className="bg-[#262626] rounded-lg absolute left-4"
         >
-          <img src="arrow-left.svg" alt="Back" />
+          <img src="arrow-left.svg" alt="Back" className="invert" />
         </button>
-        <div className="flex justify-center items-center gap-2 w-full">
-          <p className="text-white leading-7">Profil</p>
+        <div className="absolute left-1/2 transform -translate-x-1/2">
+          <p className="text-white text-[15px] font-medium leading-7">Profil</p>
         </div>
       </div>
 
       {/* Profile Title */}
-      <div className="text-center text-white text-[22px] font-medium leading-7">
-        Profilini Düzenle 👤
+      <div className="text-center text-white text-[18px] font-semibold leading-6 mt-5">
+        Profilini Düzenle <span className="text-[16px]">👤</span>
       </div>
 
       {/* Profile Image */}
       <div className="relative mt-5">
-        <img src="avatar.svg" alt="Avatar" className="w-24 h-24 rounded-full" />
-        <button className="absolute bottom-1 right-1 bg-white p-1 rounded-full">
-          <img src="camera.svg" alt="Camera Icon" className="w-5 h-5" />
+        <img src="avatar.svg" alt="Avatar" className="w-20 h-20 rounded-full" />
+        <button className="absolute bottom-[-2px] right-0.5 bg-white p-1 rounded-full">
+          <img src="camera.svg" alt="Camera Icon" className="w-4.5 h-4.5" />
         </button>
       </div>
 
